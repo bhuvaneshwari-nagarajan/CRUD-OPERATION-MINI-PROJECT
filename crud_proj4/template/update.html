@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+	<h2>UPDATE BANKING INFORMATION</h2>
+	<form method="POST"> 
+		{%csrf_token%}
+		ACCOUNT NO: <input type="text" name="account_no" value="{{p.account_no}}"><br>
+		NAME: <input type="text" name="name" value="{{p.name}}"><br>
+		DEPOSIT: <input type="text" name="deposit" value="{{p.deposit}}"><br> 
+		BALANCE: <input type="text" name="balance" value="{{p.balance}}"><br>
+
+		<input type="submit" value="UPDATE RECORD">
+	</form>
+</body>
+</center>
+</html>
+
+

@@ -1,0 +1,26 @@
+body{
+	background-image: url("bank.jpg");
+	color: white;
+	background-size: cover;
+	background-position: center;
+}
+h1{
+	padding: 20px;
+	border: 1px;
+	
+}
+td{
+	padding: 40px;
+	text-align: center;
+}
+tr{
+	background: white;
+	color: black;
+}
+a{
+	text-decoration: solid;
+	color: white;
+	background: gold;
+	padding: 6px 18px;
+	border-radius: 5px;
+}
