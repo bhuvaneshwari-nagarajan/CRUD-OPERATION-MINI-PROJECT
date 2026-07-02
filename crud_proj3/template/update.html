@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+	<h2>UPDATE Product INFORMATION</h2>
+	<form method="POST"> 
+		{%csrf_token%}
+		Product Number: <input type="text" name="pno" value="{{p.pno}}"><br>
+		Product Name: <input type="text" name="pname" value="{{p.pname}}"><br>
+		Product Quantity: <input type="text" name="pquantity" value="{{p.pquantity}}"><br> 
+		Product Price: <input type="text" name="pprice" value="{{p.pprice}}"><br>
+
+		<input type="submit" value="UPDATE RECORD">
+	</form>
+</body>
+</center>
+</html>
+
+

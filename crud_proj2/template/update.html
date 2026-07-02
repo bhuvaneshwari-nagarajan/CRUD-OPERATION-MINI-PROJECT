@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+	<h2>UPDATE GROCERY ITEMS</h2>
+	<form method="POST"> 
+		{%csrf_token%}
+		Name: <input type="text" name="name" value="{{s.name}}"><br>
+		Quantity: <input type="text" name="quantity" value="{{s.quantity}}"><br>
+		Price: <input type="text" name="price" value="{{s.price}}"><br> 
+		
+
+		<input type="submit" value="UPDATE RECORD">
+	</form>
+</body>
+</center>
+</html>
+
+
