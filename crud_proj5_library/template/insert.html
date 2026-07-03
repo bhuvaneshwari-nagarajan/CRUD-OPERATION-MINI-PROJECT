@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>INSERT RECORD</title>
+</head>
+<center>
+<body>
+<h2>INSERT LIBRARY INFORMATION</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="INSERT RECORD">
+</form>
+	
+</body>
+</center>
+</html>

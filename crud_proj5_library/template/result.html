@@ -1,0 +1,67 @@
+{% load static %}
+
+{% load static %}
+<html>
+<head>
+    <title>LIBRARY INFORMATION</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+<center>
+
+<h1>LIBRARY INFORMATION</h1>
+
+<p>
+    <a href="/insert/">➕ Insert New Book</a>
+</p>
+
+
+<table border="5">
+<thead>
+    <th>S.NO</th>
+    <th>BOOK NAME</th>
+    <th>AUTHOR NAME</th>
+    <th>PUBLISHER</th>
+    <th>PRICE</th>
+    <th>QUANTITY</th>
+    <th>AVAILABLE COPIES</th>
+    <th>LANGUAGE</th>
+    <th>SHELF NO</th>
+    <th>ISSUE DATE</th>
+    <th>RETURN DATE</th>
+    <th>ACTION</th>
+</thead>
+
+{% for x in p %}
+<tr>
+    <td>{{x.sno}}</td>
+    <td>{{x.book_name}}</td>
+    <td>{{x.author_name}}</td>
+    <td>{{x.publisher}}</td>
+    <td>{{x.price}}</td>
+    <td>{{x.quantity}}</td>
+    <td>{{x.available_copies}}</td>
+    <td>{{x.language}}</td>
+    <td>{{x.shelf_no}}</td>
+    <td>{{x.issue_date}}</td>
+    <td>{{x.return_date}}</td>
+    <td>
+        <a href="/update/{{x.sno}}/">Update</a> |
+        <a href="/delete/{{x.sno}}/">Delete</a> |
+        <a href="/insert/">Insert</a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+
+</center>
+</body>
+</html>
+
+
+
+
+

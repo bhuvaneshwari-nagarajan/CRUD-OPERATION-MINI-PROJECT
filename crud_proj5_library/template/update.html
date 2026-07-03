@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>UPDATE LIBRARY INFORMATION</title>
+</head>
+
+<body>
+<center>
+    <h2>UPDATE LIBRARY INFORMATION</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        BOOK NAME:
+        <input type="text" name="book_name" value="{{p.book_name}}"><br><br>
+
+        AUTHOR NAME:
+        <input type="text" name="author_name" value="{{p.author_name}}"><br><br>
+
+        PUBLISHER:
+        <input type="text" name="publisher" value="{{p.publisher}}"><br><br>
+
+        PRICE:
+        <input type="text" name="price" value="{{p.price}}"><br><br>
+
+        QUANTITY:
+        <input type="text" name="quantity" value="{{p.quantity}}"><br><br>
+
+        AVAILABLE COPIES:
+        <input type="text" name="available_copies" value="{{p.available_copies}}"><br><br>
+
+        LANGUAGE:
+        <input type="text" name="language" value="{{p.language}}"><br><br>
+
+        SHELF NO:
+        <input type="text" name="shelf_no" value="{{p.shelf_no}}"><br><br>
+
+        ISSUE DATE:
+        <input type="date" name="issue_date" value="{{p.issue_date|date:'Y-m-d'}}"><br><br>
+
+        RETURN DATE:
+        <input type="date" name="return_date" value="{{p.return_date|date:'Y-m-d'}}"><br><br>
+
+        <input type="submit" value="UPDATE RECORD">
+
+    </form>
+</center>
+</body>
+</html>
